@@ -12,8 +12,8 @@ class OrangeController extends Controller
         return view('orange.index');
     }
 
-    public function posts()
+    /* public function posts()
     {
         return view('orange.index');
-    }
+    } */
 }

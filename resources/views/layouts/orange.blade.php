@@ -80,6 +80,7 @@
                                     <li><a href="#">eCommerce</a></li>
                                     <li><a href="#">Branding</a></li>
                                     <li><a href="#">API</a></li>
+                                    <li><a href="{{route('admin.posts.index')}}">Blog</a></li>
 
                                     {{-- <li><a href="{{ route('') }}">Web Design</a></li>
                                     <li><a href="{{ route('') }}">eCommerce</a></li>
