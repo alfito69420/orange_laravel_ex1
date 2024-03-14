@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\DB;
+use Illuminate\Support\Facades\Http;
 
 class OrangeController extends Controller
 {
@@ -12,8 +14,13 @@ class OrangeController extends Controller
         return view('orange.index');
     }
 
-    /* public function posts()
+    public function show($id)
     {
-        return view('orange.index');
-    } */
+        $response = Http::get("http://localhost:3000/posts/id/$id");
+        $posts = $response->object();
+
+        $post = $posts[0];
+
+        return view('orange.detail', compact('post'));
+    }
 }

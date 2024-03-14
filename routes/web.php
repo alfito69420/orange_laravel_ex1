@@ -23,6 +23,9 @@ Route::get('/', [OrangeController::class, 'index'])->name("index");
 
 Route::get("/posts/index", [PostsController::class, 'posts'])->name("admin.posts.index");
 
+Route::get('/detail-product/{id}', [OrangeController::class, 'show'])->name('detail');
+
+
 
 
 
